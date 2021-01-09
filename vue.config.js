@@ -1,5 +1,9 @@
 // vue.config.js 
 module.exports = {
     publicPath: '/portfolio/',
-    outputDir: 'docs'
+    outputDir: 'docs',
+    transpileDependencies: [
+      'vuetify',
+    ],
+    runtimeCompiler: true,
 }
