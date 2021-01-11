@@ -7,8 +7,19 @@ Vue.use(VueRouter);
 
 const routes = [
   {
+    name: 'home',
     path: "/portfolio",
     component: () => import("@/components/home/Home.vue"),
+  },
+  {
+    name: 'work',
+    path: "/mywork",
+    component: () => import("@/components/work/Work.vue"),
+  },
+  {
+    name: 'about',
+    path: "/portfolio/about",
+    component: () => import("@/components/about/About.vue"),
   },
 ];
 

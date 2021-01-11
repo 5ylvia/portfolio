@@ -1,22 +1,27 @@
 <template>
   <v-app>
-    <Header></Header>
+    <Header />
     <router-view></router-view>
+    <Sidebar />
   </v-app>
-
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
+import Sidebar from "@/components/Sidebar.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Header
-  }
-}
+    Header,
+    Sidebar,
+  },
+};
 </script>
 
-<style>
-
+<style lang="scss">
+@import "@/style/_variables.scss";
+#app .v-application--wrap {
+  flex-direction: row;
+}
 </style>
