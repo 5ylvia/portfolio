@@ -24,4 +24,7 @@ export default {
 #app .v-application--wrap {
   flex-direction: row;
 }
+#app .v-main {
+  margin-left: 10%;
+}
 </style>

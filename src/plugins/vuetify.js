@@ -6,11 +6,14 @@ Vue.use(Vuetify)
 
 const vuetify = new Vuetify({
   theme: {
+    options: {
+      customProperties: true
+    },
     themes: {
       light: {
         primary: '#939597',
-        secondary: '#818a91',
-        anchor: '#F5DF4D',
+        secondary: '#e0e0e0',
+        accent: '#f5df4d',
       },
     },
   },

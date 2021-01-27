@@ -25,6 +25,9 @@ export default {
   display: flex;
   flex-direction: column;
 }
+.v-list.sidebar.v-sheet.theme--light {
+  background: none;
+}
 .sidebar-line {
   margin: 0 1em 1em 0;
   height: 20em;

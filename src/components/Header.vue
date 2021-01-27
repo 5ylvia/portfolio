@@ -2,17 +2,18 @@
   <v-navigation-drawer
     permanent
     expand-on-hover
+    fixed
     height="100vh"
-    class="nav ml-8 mt-8"
+    class="nav mx-8"
   >
     <router-link :to="{ name: 'home' }">
       <v-list>
-        <v-list-item class="px-2">
+        <v-list-item class="px-2 pt-8">
           <v-list-item-content>
             <img
               style="width: 40px; max-width: 100px"
               src="@/assets/logo.png"
-              alt=""
+              alt="logo"
             />
           </v-list-item-content>
         </v-list-item>
@@ -21,18 +22,23 @@
 
     <v-list nav dense>
       <v-divider class="mb-4"></v-divider>
-      <v-list-item :to="{ name: 'home' }">
-        <v-icon>mdi-alpha-w-circle-outline</v-icon>
-        <v-list-item-title class="pl-3">HOME</v-list-item-title>
-      </v-list-item>
-      <v-list-item :to="{ name: 'work' }">
-        <v-icon>mdi-alpha-w-circle-outline</v-icon>
-        <v-list-item-title class="pl-3">WORK</v-list-item-title>
-      </v-list-item>
-      <v-list-item :to="{ name: 'about' }">
-        <v-icon>mdi-alpha-a-circle-outline</v-icon>
-        <v-list-item-title class="pl-3">ABOUT</v-list-item-title>
-      </v-list-item>
+      <v-list-item-group v-model="selectedMenu">
+        <v-list-item
+          v-for="(menu, i) in menus"
+          :key="i"
+          :to="{ name: menu.text }"
+        >
+          <v-list-item-icon>
+            <v-icon v-text="menu.icon"></v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title
+              class="text-uppercase"
+              v-text="menu.text"
+            ></v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list-item-group>
     </v-list>
   </v-navigation-drawer>
 </template>
@@ -40,13 +46,18 @@
 <script>
 export default {
   name: "Header",
+  data: () => ({
+    selectedMenu: 0,
+    menus: [
+      { text: "home", icon: "mdi-alpha-h-circle-outline" },
+      { text: "work", icon: "mdi-alpha-w-circle-outline" },
+      { text: "about", icon: "mdi-alpha-a-circle-outline" },
+    ],
+  }),
 };
 </script>
 
 <style>
-.nav.theme--light.v-navigation-drawer:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-}
 .nav .v-navigation-drawer__border {
   width: 0;
 }
@@ -55,12 +66,12 @@ export default {
 }
 .nav .theme--light.v-list-item--active .v-list-item__title,
 .nav .theme--light.v-list-item--active .v-icon {
-  color: #f5df4d;
+  color: var(--v-accent-darken1);
 }
 .nav .v-list--nav .v-list-item,
 .v-list-item__title,
 .nav .theme--light.v-icon {
-  color: #939597;
+  color: var(--v-primary-lighten1);
   padding: 0;
 }
 .nav.theme--light.v-navigation-drawer .v-divider {

@@ -1,13 +1,14 @@
 <template>
-  <v-main>home</v-main>
+  <v-main>
+    <div></div>
+  </v-main>
 </template>
 
 <script>
 export default {
-  name:'home'
-}
+  name: "home",
+};
 </script>
 
 <style>
-
 </style>

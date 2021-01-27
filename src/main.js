@@ -13,12 +13,12 @@ const routes = [
   },
   {
     name: 'work',
-    path: "/mywork",
+    path: "/portfolio_work",
     component: () => import("@/components/work/Work.vue"),
   },
   {
     name: 'about',
-    path: "/portfolio/about",
+    path: "/portfolio_about",
     component: () => import("@/components/about/About.vue"),
   },
 ];
