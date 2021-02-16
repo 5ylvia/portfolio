@@ -26,5 +26,6 @@ export default {
 }
 #app .v-main {
   margin-left: 10%;
+  width: 90%;
 }
 </style>

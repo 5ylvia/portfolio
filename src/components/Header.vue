@@ -6,7 +6,7 @@
     height="100vh"
     class="nav mx-8"
   >
-    <router-link :to="{ name: 'home' }">
+    <router-link :to="{ name: 'work' }">
       <v-list>
         <v-list-item class="px-2 pt-8">
           <v-list-item-content>
@@ -26,7 +26,7 @@
         <v-list-item
           v-for="(menu, i) in menus"
           :key="i"
-          :to="{ name: menu.text }"
+          :to="{ name: menu.to }"
         >
           <v-list-item-icon>
             <v-icon v-text="menu.icon"></v-icon>
@@ -49,9 +49,8 @@ export default {
   data: () => ({
     selectedMenu: 0,
     menus: [
-      { text: "home", icon: "mdi-alpha-h-circle-outline" },
-      { text: "work", icon: "mdi-alpha-w-circle-outline" },
-      { text: "about", icon: "mdi-alpha-a-circle-outline" },
+      { to: "work", icon: "W", text:"Works" },
+      { to: "about", icon: "A", text:"about me" },
     ],
   }),
 };

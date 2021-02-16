@@ -7,18 +7,13 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    name: 'home',
-    path: "/portfolio",
-    component: () => import("@/components/home/Home.vue"),
-  },
-  {
     name: 'work',
-    path: "/portfolio_work",
+    path: "/portfolio/works",
     component: () => import("@/components/work/Work.vue"),
   },
   {
     name: 'about',
-    path: "/portfolio_about",
+    path: "/portfolio/about",
     component: () => import("@/components/about/About.vue"),
   },
 ];
@@ -34,5 +29,5 @@ Vue.config.productionTip = false
 new Vue({
   render: h => h(App),
   vuetify,
-  router
+  router,
 }).$mount('#app')

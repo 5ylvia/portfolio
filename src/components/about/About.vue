@@ -1,5 +1,7 @@
 <template>
-  <v-main>about</v-main>
+  <v-main>
+    <div></div>
+  </v-main>
 </template>
 
 <script>
@@ -8,6 +10,5 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import "@/style/_variables.scss";
+<style>
 </style>

@@ -2,27 +2,30 @@
   <v-main>
     <v-row no-gutters>
       <v-col
-        cols="6"
-        xs="12"
+        cols="12"
+        md="6"
+        width="100%"
         v-for="(project, i) in projects"
         :key="i"
         :to="{ name: project.text }"
       >
         <v-hover>
           <template v-slot:default="{ hover }" color="primary">
-            <v-card>
-              <v-img height="40vh" width="100%" :src="project.src"></v-img>
-              <v-card-title v-text="project.title"> </v-card-title>
-
+            <v-card min-height="500px" height="40vh">
+              <v-img height="100%" width="100%" :src="project.src">
+                <!-- <v-card-title v-text="project.title"></v-card-title> -->
+                <v-icon>{{project.icon}}</v-icon>
+                <v-card-text v-text="project.title"></v-card-text>
+              </v-img>
               <v-fade-transition>
                 <v-overlay
                   v-if="hover"
                   absolute
                   color="accent"
                   overlay-opacity="1"
-                >
-                  <!-- <v-card-text v-text="project.text"> </v-card-text> -->
-                  <v-btn color="primary">See more</v-btn>
+                >            
+                  <!-- <v-card-text>See more</v-card-text> -->
+                  <v-btn large color="primary">See more</v-btn>
                 </v-overlay>
               </v-fade-transition>
             </v-card>
@@ -40,29 +43,14 @@ export default {
     overlay: false,
     projects: [
       {
-        src: require("@/assets/logo.png"),
-        title: "home",
-        text: "ux",
+        src: require("@/assets/Front.jpg"),
+        title: "Ōtākaro Orchard",
+        icon: "fab fa-wordpress",
       },
       {
-        src: require("@/assets/logo.png"),
-        title: "work",
-        text: "mdi-alpha-w-circle-outline",
-      },
-      {
-        src: require("@/assets/logo.png"),
-        title: "about",
-        text: "mdi-alpha-a-circle-outline",
-      },
-      {
-        src: require("@/assets/logo.png"),
-        title: "about",
-        text: "mdi-alpha-a-circle-outline",
-      },
-      {
-        src: require("@/assets/logo.png"),
-        title: "about",
-        text: "mdi-alpha-a-circle-outline",
+        src: require("@/assets/Front.jpg"),
+        title: "Digivent",
+        icon: "fab fa-vuejs",
       },
     ],
   }),
@@ -71,4 +59,16 @@ export default {
 
 <style lang="scss">
 @import "@/style/_variables.scss";
+.v-card__title {
+  // position: absolute;
+  // width:100%;
+  // bottom: 0;
+  // opacity: 0.6;
+  // background: rgba(255,255,255,0.3);
+  // height: 100px;
+}
+.v-sheet.v-card {
+  border-radius: 0;
+}
+
 </style>
