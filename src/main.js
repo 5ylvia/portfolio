@@ -5,6 +5,7 @@ import vuetify from '@/plugins/vuetify';
 
 Vue.use(VueRouter);
 
+
 const routes = [
   {
     name: 'work',
@@ -19,8 +20,9 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  routes: routes,
   mode: "history",
+  routes: routes,
+
 });
 
 

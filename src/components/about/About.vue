@@ -1,6 +1,8 @@
 <template>
   <v-main>
-    <div></div>
+    <div>
+      
+    </div>
   </v-main>
 </template>
 
