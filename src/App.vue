@@ -21,6 +21,7 @@ export default {
 
 <style lang="scss">
 @import "@/style/_variables.scss";
+
 #app .v-application--wrap {
   flex-direction: row;
 }

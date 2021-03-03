@@ -41,7 +41,7 @@
                   <v-card-text class="pa-0"
                     >Case study {{ i + 1 }}.</v-card-text
                   >
-                  <v-card-title class="pa-0 font-weight-bold headline black--text"
+                  <v-card-title class="pa-0 font-weight-bold black--text"
                     >{{ project.title }}</v-card-title
                   >
                 </v-overlay>
@@ -73,14 +73,14 @@
             <v-icon>mdi-close</v-icon>
           </v-btn>
           <v-spacer></v-spacer>
-          <span class="font-weight-light grey--text">- {{ currentProject.title }}</span>
+          <span class="overline font-weight-light grey--text">- {{ currentProject.title }}</span>
         </v-card-title>
         <v-card-text>
-            <v-list-item>
+          <v-list-item>
               <v-row  class="py-16">
                 <v-col cols="12" md="3">
                   <v-list-item-content>
-                    <v-list-item-title>Programming language</v-list-item-title>
+                    <v-list-item-subtitle>Programming languages</v-list-item-subtitle>
                   </v-list-item-content>
                   <v-row class="ma-0 py-4"> 
                     <v-icon large
@@ -95,10 +95,10 @@
                   <v-list-item-content>
                     <v-list-item-subtitle>{{currentProject.date}}</v-list-item-subtitle>
                   </v-list-item-content>
-                  <v-list-item-content class="headline font-weight-bold">{{currentProject.detail}}</v-list-item-content>
+                  <v-list-item-content class="caption">{{currentProject.detail}}</v-list-item-content>
                 </v-col>
               </v-row>
-            </v-list-item>
+          </v-list-item>
           
           <v-list>
             <v-list-item v-for="(image, i) in currentProject.images" :key="i">
@@ -145,7 +145,7 @@
                             <v-card-text class="pa-0"
                               >Case study {{ i + 1 }}.</v-card-text
                             >
-                            <v-card-title class="pa-0 font-weight-bold headline black--text"
+                            <v-card-title class="pa-0 font-weight-bold black--text"
                               >{{ project.title }}</v-card-title
                             >
                           </v-overlay>

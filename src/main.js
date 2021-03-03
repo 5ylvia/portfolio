@@ -9,7 +9,7 @@ Vue.use(VueRouter);
 const routes = [
   {
     name: 'work',
-    path: "/portfolio/works",
+    path: "/portfolio",
     component: () => import("@/components/work/Work.vue"),
   },
   {
