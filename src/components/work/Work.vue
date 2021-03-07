@@ -101,7 +101,7 @@
           
           <v-list class="mx-8 mx-sm-10 mx-md-16" >
             <v-list-item v-for="(image, i) in currentProject.images" :key="i">
-              <v-img class="my-4 my-md-8 my-lg-16"
+              <v-img class="my-4 my-md-8 my-lg-16" height="100%"
                 :src="require(`@/assets/` + image)"
               ></v-img>
             </v-list-item>
