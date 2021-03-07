@@ -195,6 +195,7 @@ export default {
         title: "Ōtākaro Orchard",
         icons: ["fab fa-wordpress", "fab fa-aws", "fab fa-php", "fab fa-sass"],
         date: "DEC. 2020 | 4 weeks",
+        url: "http://13.211.245.29/",
         detail: `Ōtākaro Orchard has a website which is linked to the edible Canterbury site and is very corporate looking.
         They would like for this to be more bicultural and promote the understanding of interconnections between land health, food health and people health.`
       },
