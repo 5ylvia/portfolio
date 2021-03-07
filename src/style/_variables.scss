@@ -1,3 +1,26 @@
 @mixin center {
   text-align: center;
 }
+
+/* Responsive Size */
+$grid-breakpoints: (
+  'xs': 0,
+  'sm': 600px,
+  'md': 960px,
+  'lg': 1264px - 24px,
+  'xl': 1904px - 24px
+);
+
+$xs: 600px;
+
+@mixin mobile {
+  @media (max-width: #{$xs - 1px}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$xs}) {
+    @content;
+  }
+}
+

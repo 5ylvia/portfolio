@@ -1,11 +1,14 @@
 <template>
-  <v-list class="sidebar">
+  <v-list class="sidebar hidden-xs-only">
     <div class="sidebar-line"></div>
+    <v-list-item href="https://github.com/5ylvia">
+      <v-icon color="primary">fab fa-github</v-icon>
+    </v-list-item>
     <v-list-item href="https://www.linkedin.com/in/sylvia-lee-130">
-      <v-icon>mdi-linkedin</v-icon>
+      <v-icon color="primary">mdi-linkedin</v-icon>
     </v-list-item>
     <v-list-item href="mailto:sylvi.3311@gmail.com">
-      <v-icon>mdi-email-outline</v-icon>
+      <v-icon color="primary">mdi-email-outline</v-icon>
     </v-list-item>
   </v-list>
 </template>
@@ -21,9 +24,10 @@ export default {
   position: fixed;
   bottom: 3em;
   right: 32px;
-  z-index: 1;
+  z-index: 10;
   display: flex;
   flex-direction: column;
+  
 }
 .v-list.sidebar.v-sheet.theme--light {
   background: none;

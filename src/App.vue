@@ -22,11 +22,15 @@ export default {
 <style lang="scss">
 @import "@/style/_variables.scss";
 
-#app .v-application--wrap {
-  flex-direction: row;
+@include desktop {
+  #app .v-application--wrap {
+    flex-direction: row;
+  }
+  #app {
+    // margin-left: 10%;
+    width: 100vw;
+    height:100vh;
+  }
 }
-#app .v-main {
-  margin-left: 10%;
-  width: 90%;
-}
+
 </style>
