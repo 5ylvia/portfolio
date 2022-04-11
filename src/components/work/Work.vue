@@ -63,7 +63,7 @@
       transition="dialog-bottom-transition"
       v-model="sheet"
     >
-      <v-card tile :project="currentProject">
+      <v-card tile :project="currentProject" max-width="1200px">
         <v-card-title>
           <v-btn icon @click="sheet = false">
             <v-icon>mdi-close</v-icon>
