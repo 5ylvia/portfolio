@@ -351,6 +351,10 @@ export default {
     max-width: 1300px;
     margin: auto !important;
   }
+  .row.no-gutters {
+    width: calc(100% - 70px);
+    margin-left: 70px;
+  }
 }
 .thumbnail .v-responsive__content {
   display: flex;

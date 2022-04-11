@@ -39,7 +39,7 @@
     </v-sheet>
 
     <!-- Web nav -->
-    <v-navigation-drawer permanent width="70px" class="hidden-xs-only">
+    <v-navigation-drawer fixed permanent width="70px" class="hidden-xs-only">
       <v-list-item class="pl-4">
         <v-img
           class="mt-12"
