@@ -11,12 +11,7 @@ const routes = [
     name: 'work',
     path: "/portfolio",
     component: () => import("@/components/work/Work.vue"),
-  },
-  {
-    name: 'about',
-    path: "/portfolio/about",
-    component: () => import("@/components/about/About.vue"),
-  },
+  }
 ];
 
 const router = new VueRouter({
