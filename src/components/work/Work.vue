@@ -17,6 +17,7 @@
               @click="selectProject(project)"
             >
               <v-img
+                cover
                 height="100%"
                 width="100%"
                 :src="require(`@/assets/` + project.images[0])"
@@ -130,6 +131,7 @@
                 class="my-4 my-md-8 my-lg-16"
                 width="100%"
                 height="100%"
+                max-width="1200px"
                 :src="require(`@/assets/` + image)"
               ></v-img>
             </v-list-item>
@@ -242,6 +244,15 @@ export default {
     currentProject: Object,
     otherProject: Array,
     projects: [
+      {
+        images: ["m-1.png", "m-2.png", "m-3.png", "m-4.png"],
+        title: "Mana College",
+        icons: ["fab fa-wordpress", "fab fa-sass", "fab fa-figma"],
+        date: "May. 2021 | 2 weeks",
+        casestudy: false,
+        url: "https://www.mana.school.nz/",
+        detail: `Mana College has a strong cultural identity, love the bold and energetic colours to used. I really enjoyed design process and and it was such a fun project to be involved`,
+      },
       {
         images: ["2-1.png", "2-2.png", "2-3.png", "2-4.png"],
         title: "Illustrations",
