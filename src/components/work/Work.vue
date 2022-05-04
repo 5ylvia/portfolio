@@ -251,7 +251,7 @@ export default {
         date: "May. 2021 | 2 weeks",
         casestudy: false,
         url: "https://www.mana.school.nz/",
-        detail: `Mana College has a strong cultural identity, love the bold and energetic colours to used. I really enjoyed design process and and it was such a fun project to be involved`,
+        detail: `Mana College has a strong cultural identity, love the bold and energetic colours to used. It was such a fun project to be involved, I really enjoyed design process. Featuring Hail`,
       },
       {
         images: ["2-1.png", "2-2.png", "2-3.png", "2-4.png"],
