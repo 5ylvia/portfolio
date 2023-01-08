@@ -245,6 +245,24 @@ export default {
     otherProject: Array,
     projects: [
       {
+        images: ["n-1.png", "n-2.png", "n-3.png", "n-4.png", "n-5.png", "n-6.png"],
+        title: "Nurse Maude",
+        icons: ["fab fa-wordpress", "fab fa-sass", "fab fa-figma"],
+        date: "Aug. 2022 | 18 weeks",
+        casestudy: false,
+        url: "https://nursemaude.org.nz/",
+        detail: `Nurse Maude needed to redesign their website with a new branding design that was designed by our awesome creative lead. I took a part as web designer, worked on new modern website that is not only visually appealing but also provides an exceptional user experience. We worked closely with Nurse Maude's team to ensure that our solution was both effective and appealing to users and would represent Nurse Maude's brand identity well. We're excited to work on this project because we believe in the power of a well-designed website.`,
+      },
+      {
+        images: ["cg-1.png", "cg-2.png", "cg-3.png"],
+        title: "Christchurch Girls' High School",
+        icons: ["fab fa-wordpress", "fab fa-sass", "fab fa-figma"],
+        date: "Jun. 2021 | 6 weeks",
+        casestudy: false,
+        url: "https://cghs.school.nz/",
+        detail: `Christchurch Girls’ High School values cultural diversity and the histories and traditions of all peoples. The new site is designed as a classic website with a modern twist. It will be easy to navigate with clear call-to-action buttons that direct visitors towards different sections of the site, and that helps to find the useful information. The site also have a lot of nice photos to provide an excellent user experience for visitors.`,
+      },
+      {
         images: ["m-1.png", "m-2.png", "m-3.png", "m-4.png"],
         title: "Mana College",
         icons: ["fab fa-wordpress", "fab fa-sass", "fab fa-figma"],
